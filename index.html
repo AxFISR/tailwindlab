@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Tailwind</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body class="bg-white text-slate-800 dark:bg-gray-700 dark:text-white p-4">
+    <div class="max-w-[1000px] w-full h-[100vh] mx-auto flex flex-col gap-2 p-2">
+      <div class="p-4 bg-slate-400 flex justify-between relative" id="nav">
+        
+        <div class="sm:flex justify-start gap-4 hidden pt-1.5">
+          <a href="#" class="font-bold hover:underline text-2xl" >Home</a>
+          <a href="#" class="font-bold hover:underline text-2xl" >Projects</a>
+          <a href="#" class="font-bold hover:underline text-2xl" >About</a>
+
+        </div>
+        <button class="border border-slate-800 rounded py-1 px-3 block sm:hidden" id="btnmenu" >menu</button>
+        <div class="justify-start gap-4 sm:hidden absolute bg-slate-600 top-[80px] left-0 right-0 top[70px] p-4 pb-8 hidden" id="popupmenu">
+          <a href="#" class="font-bold hover:underline text-2xl block" >Home</a>
+          <a href="#" class="font-bold hover:underline text-2xl block" >Projects</a>
+          <a href="#" class="font-bold hover:underline text-2xl block" >About</a>
+
+        </div>
+        <button id="btnTheme" class="border border-slate-700 rounded py-1 px-3">dark</button>
+        
+      </div>
+      <div class="p-4 grow border border-slate-500">body</div>
+      <div class="p-4 text-center bg-slate-400">footer</div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+
+  </body>
+</html>
